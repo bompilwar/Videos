@@ -1,0 +1,14 @@
+HPA is used to add the pod in cluster 
+Kubernetes supports horizontal pod autoscaling (HPA), which automatically adjusts the
+number of pod replicas based on CPU or custom metrics. When a defined threshold is exceeded,
+Kubernetes scales up or down by creating or terminating pods.
+
+Install metrix server to run the top command to check the CPU and memory utilization 
+
+kubectl top nodes
+kubectl top pods 
+
+create an horizontal pod autoscaler yaml file and mention the load capacity 
+hpa count will be incresed automatically 
+kubectl get hpa 
+
